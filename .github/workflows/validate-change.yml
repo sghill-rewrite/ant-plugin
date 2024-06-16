@@ -1,0 +1,6 @@
+on:
+  push:
+    branches: ["refactor/*/validate"]
+jobs:
+  validate-change:
+    uses: sghill-rewrite/workflow-validation/.github/workflows/validate.yml@main
